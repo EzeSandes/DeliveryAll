@@ -1,5 +1,19 @@
-/* @media (max-width: 400px) {
+@media (max-width: 400px) {
   html {
     font-size: 50%;
   }
-} */
+
+  .flex-center {
+    flex-direction: column;
+  }
+
+  .img-header {
+    height: 40rem;
+  }
+
+  .home-btn-box {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
