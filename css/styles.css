@@ -4,6 +4,7 @@
   --c-primary-tint-1: #feb3cb;
   --c-text-1: #313131;
   --c-gray-1: #f5f5f5;
+  --c-gray-2: #808080;
   --backg-c-main: #ffffff;
   --size-header: 8rem;
 }
@@ -83,7 +84,11 @@
 
 .section-home {
   padding: 8rem 0 0 0;
-  height: 100vh;
+  min-height: 100vh;
+}
+
+.home-container {
+  gap: 3.2rem;
 }
 
 .home-text {
@@ -115,9 +120,72 @@
   display: flex;
   gap: 2rem;
 }
+
+.play-store-icon,
+.apple-store-icon {
+  font-size: 3rem;
+}
+
+/**************************/
+/* SECTION FEATURES */
+/**************************/
+
+.section-feature {
+  padding: 8rem;
+}
+
+.features-text {
+  font-size: 1.8rem;
+  color: var(--c-gray-2);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+.companies {
+  gap: 4rem;
+}
+
+.company {
+  height: 8rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+/**************************/
+/* ABOUT SECTION */
+/**************************/
+
+.section-about {
+  padding: 6.4rem 0;
+}
+
+.about-box {
+  gap: 3.2rem;
+}
+
+.about-img {
+  width: 100%;
+  height: auto;
+}
+
+.about-box--text {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+/**************************/
+/* HOW-IT-WORKS SECTION */
+/**************************/
+
+.section-how {
+  padding: 9.6rem 0;
+}
+
 /**************************/
 /*  */
 /**************************/
+
 /*
 - Font sizes (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 / 114 / 132

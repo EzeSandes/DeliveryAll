@@ -24,30 +24,34 @@
   </head>
   <body>
     <header class="header" id="header">
-      <nav class="nav">
-        <a href="#" class="logo">DeliveryAll</a>
+      <div class="container">
+        <nav class="nav">
+          <a href="#" class="logo">DeliveryAll</a>
 
-        <div class="nav-menu">
-          <ul class="nav-list">
-            <li><a class="nav-item link" href="#">Home</a></li>
-            <li><a class="nav-item link" href="#">About us</a></li>
-            <li><a class="nav-item link" href="#">How it works</a></li>
-            <li>
-              <a class="btn btn--secondary--outline" href="#">Download now!</a>
-            </li>
-          </ul>
-        </div>
+          <div class="nav-menu">
+            <ul class="nav-list">
+              <li><a class="nav-item link" href="#">Home</a></li>
+              <li><a class="nav-item link" href="#">About us</a></li>
+              <li><a class="nav-item link" href="#">How it works</a></li>
+              <li>
+                <a class="btn btn--secondary--outline" href="#"
+                  >Download now!</a
+                >
+              </li>
+            </ul>
+          </div>
 
-        <div class="nav-toggle" id="nav-toggle">
-          <ion-icon class="nav-icon" name="grid-outline"></ion-icon>
-          <ion-icon class="nav-icon hidden" name="close-outline"></ion-icon>
-        </div>
-      </nav>
+          <div class="nav-toggle" id="nav-toggle">
+            <ion-icon class="nav-icon" name="grid-outline"></ion-icon>
+            <ion-icon class="nav-icon hidden" name="close-outline"></ion-icon>
+          </div>
+        </nav>
+      </div>
     </header>
     <main>
-      <div class="section-home">
+      <section class="section-home">
         <div class="container">
-          <div class="flex-center">
+          <div class="flex-center home-container">
             <div class="text-box--home">
               <div class="home-heading">
                 <h2 class="heading-primary">
@@ -63,17 +67,84 @@
               </div>
               <div class="home-btn-box">
                 <a class="btn btn-download--full" href="#">
-                  <ion-icon name="logo-google-playstore"></ion-icon> Google play
+                  <ion-icon
+                    class="play-store-icon"
+                    name="logo-google-playstore"
+                  ></ion-icon>
+                  <p><span>Android app on</span>Google play</p>
                 </a>
                 <a class="btn btn-download--outline" href="#">
-                  <ion-icon name="logo-google-playstore"></ion-icon> App store
+                  <ion-icon
+                    class="apple-store-icon"
+                    name="logo-apple"
+                  ></ion-icon>
+                  <p><span>Available on the</span>App store</p>
                 </a>
               </div>
             </div>
             <img class="img-header" src="img/header-img.svg" alt="" />
           </div>
         </div>
-      </div>
+      </section>
+
+      <section class="section-feature">
+        <div class="container">
+          <p class="features-text">They work with us</p>
+          <div class="flex-center companies">
+            <img
+              src="img/logos-features/Pfizer-logo.png"
+              alt=""
+              class="company"
+            />
+            <img src="img/logos-features/kfc-logo.png" alt="" class="company" />
+            <img
+              src="img/logos-features/logo-Walmart.png"
+              alt=""
+              class="company"
+            />
+            <img
+              src="img/logos-features/burgerKing-logo.png"
+              alt=""
+              class="company"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-about">
+        <div class="container flex-center about-box">
+          <img class="about-img" src="img/About-us.svg" alt="" />
+          <div class="about-box--text">
+            <div class="about-heading">
+              <span class="heading-text">About us</span>
+              <h2 class="heading-secondary">Find out who we are</h2>
+            </div>
+            <p class="text">
+              We are the leading technology company in Q-Commerce and delivery
+              in all USA. A simple, practical and free digital platform that
+              allows users to choose their favorite dish or products from
+              thousands of available options and place their order through the
+              website or the iPhone and Android applications.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION HOW -->
+      <section class="section-how">
+        <div class="container">
+          <span class="heading-text">How it works</span>
+          <h2 class="heading-secondary">Your life easier in 3 steps</h2>
+        </div>
+        <div class="container grid grid--2-cols">
+          <img src="img/1-order.svg" alt="" />
+          <div class="step-text-box"></div>
+          <img src="img/2-track-order.svg" alt="" />
+          <div class="step-text-box"></div>
+          <img src="img/3-receive.svg" alt="" />
+          <div class="step-text-box"></div>
+        </div>
+      </section>
     </main>
 
     <!-- ICONS -->

@@ -1,6 +1,6 @@
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   html {
-    font-size: 50%;
+    font-size: 60%;
   }
 
   .flex-center {
@@ -15,5 +15,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 50%;
   }
 }
