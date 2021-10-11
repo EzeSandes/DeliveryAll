@@ -11,7 +11,7 @@
     height: 40rem;
   }
 
-  .home-btn-box {
+  .btn-box {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -24,6 +24,10 @@
   .grid--2-cols,
   .grid--4-cols {
     grid-template-columns: 1fr;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 

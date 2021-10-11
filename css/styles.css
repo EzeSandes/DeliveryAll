@@ -6,6 +6,7 @@
   --c-gray-1: #f5f5f5;
   --c-gray-2: #808080;
   --backg-c-main: #ffffff;
+  --backg-c-footer: #feccdc;
   --size-header: 8rem;
 }
 
@@ -116,16 +117,6 @@
   gap: 5rem;
 }
 
-.home-btn-box {
-  display: flex;
-  gap: 2rem;
-}
-
-.play-store-icon,
-.apple-store-icon {
-  font-size: 3rem;
-}
-
 /**************************/
 /* SECTION FEATURES */
 /**************************/
@@ -180,6 +171,10 @@
 
 .section-how {
   padding: 9.6rem 0 0 0;
+}
+
+.section-how .grid {
+  align-items: center;
 }
 
 .step-text-box {
@@ -246,6 +241,128 @@
   font-size: 1.8rem;
 }
 
+/**************************/
+/* DOWNLOAD SECTION */
+/**************************/
+
+.download-section {
+  padding: 9.6rem 0 0 0;
+  margin-top: 1.2rem;
+}
+
+.download-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.download-box-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.download-list {
+  display: flex;
+  flex-direction: column;
+  padding: 3.2rem;
+  gap: 1.2rem;
+}
+
+.download-item {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.download-item--icon {
+  width: 3rem;
+  height: 3rem;
+  color: var(--c-primary-tint-2);
+}
+
+.download-box-img {
+  max-height: 52rem;
+}
+
+/**************************/
+/* FOOTER */
+/**************************/
+
+.footer {
+  margin: 6.4rem 0 0 0;
+  padding: 6.4rem 0 1rem 0;
+  background-color: var(--backg-c-footer);
+}
+
+.footer-nav,
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-col {
+  grid-column: span 3;
+  gap: 1.2rem;
+}
+
+.footer-nav {
+  gap: 2rem;
+}
+
+.footer-logo {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--c-primary);
+  text-decoration: none;
+}
+
+.contacts {
+  font-size: 1.8rem;
+  line-height: 1.3;
+}
+
+.contacts p {
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.social-links--item {
+  font-size: 2.4rem;
+}
+
+.nav-col {
+  grid-row: 1;
+  grid-column: span 3;
+}
+
+.company-col {
+  grid-row: 2;
+  grid-column: 4 / span 3;
+}
+
+.footer-heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.footer-link {
+  font-size: 1.8rem;
+}
+
+.copyright {
+  margin: 4rem 0 1rem 0;
+  text-align: center;
+}
 /**************************/
 /*  */
 /**************************/

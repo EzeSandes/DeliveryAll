@@ -109,6 +109,10 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--footer {
+  grid-template-columns: 1.5fr repeat(3, 1fr);
+}
+
 /**************************/
 /* LIST */
 /**************************/
@@ -126,6 +130,16 @@ ul li {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+}
+
+.btn-box {
+  display: flex;
+  gap: 2rem;
+}
+
+.play-store-icon,
+.apple-store-icon {
+  font-size: 3rem;
 }
 
 .btn--secondary--outline {
