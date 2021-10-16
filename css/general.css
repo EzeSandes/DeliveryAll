@@ -60,10 +60,6 @@ body {
   margin: 0 auto;
 }
 
-.section {
-  padding: 4.8rem 0 3.2rem 0;
-}
-
 .hidden {
   display: none;
 }
@@ -220,7 +216,7 @@ ul li {
 }
 
 .heading-secondary {
-  font-size: 3.6em;
+  font-size: 3rem;
   line-height: 1.1;
   display: inline-block;
   border-bottom: 1px solid var(--c-primary);
