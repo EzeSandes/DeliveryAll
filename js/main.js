@@ -1,17 +1,32 @@
 /************************************************ */
 /****************** SHOW MENU ********************** */
 /************************************************ */
+const btnMenuEl = document.getElementById("nav-toggle");
+const navMenuEl = document.querySelector(".nav-menu");
+
+function toggleMenuIcons() {
+  btnMenuEl.querySelectorAll("ion-icon").forEach((icon) => {
+    icon.classList.toggle("hidden");
+  });
+}
 
 function showMenu() {
-  const btnMenuEl = document.getElementById("nav-toggle");
-  const navMenuEl = document.querySelector(".nav-menu");
-
+  // 1 - Change Icons
   btnMenuEl.addEventListener("click", () => {
-    btnMenuEl.querySelectorAll("ion-icon").forEach((icon) => {
-      icon.classList.toggle("hidden");
-    });
-
+    toggleMenuIcons();
     navMenuEl.classList.toggle("show-menu");
+  });
+
+  // 2 - Display Menu
+  navMenuEl.addEventListener("click", function (e) {
+    if (
+      navMenuEl.classList.contains("show-menu") &&
+      (e.target.classList.contains("nav-item") ||
+        e.target.classList.contains("btn"))
+    ) {
+      navMenuEl.classList.toggle("show-menu");
+      toggleMenuIcons();
+    }
   });
 }
 
@@ -22,7 +37,6 @@ showMenu();
 /************************************************ */
 
 const allLinks = document.querySelectorAll("a:link");
-console.log(allLinks);
 
 allLinks.forEach((link) => {
   link.addEventListener("click", function (e) {
